@@ -6,9 +6,9 @@
 
 function enterClicked() {
   // input
-  const streetnumber = document.getElementById("street-number").value
-  const streetname = parseInt(document.getElementById("street-name").value)
+  const streetnumber = parseInt(document.getElementById("street-number").value)
+  const streetname = document.getElementById("street-name").value
   // output
   document.getElementById("street-adress").innerHTML =
-    "Your Adress Is: " + streetnumber + ", " + streetname + "."
+    "Your Adress Is: " + streetnumber + " " + streetname + "."
 }

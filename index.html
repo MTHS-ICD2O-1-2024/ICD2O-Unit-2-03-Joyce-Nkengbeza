@@ -48,36 +48,51 @@
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">Adress</div>
-        <img src="./images/area_and_perimeter.png" />
-      <div class="page-content">Please enter the following: </div>
-      <br />
-      <form>
-        <!-- Simple Textfield -->
-        <p>Street Number</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" id="street-number">
-          <label class="mdl-textfield__label" for="sample1">street number here...</label>
-        </div>
-        <!-- Numeric Textfield -->
-        <p>Street Name</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-name">
-          <label class="mdl-textfield__label" for="age-entered">street name here...</label>
-        </div>
+        <img src="./images/street.jpg" />
+        <div class="page-content">Please enter the following:</div>
         <br />
-        <!-- Raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="enterClicked()" type="button">
-          Enter
-        </button>
-      </form>
-      <br />
-      <div class="page-content-answer">
-        <div id="street-adress"></div>
-      </div>
+        <form>
+          <!-- Numeric Textfield -->
+          <p>Street Number</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="street-number"
+            />
+            <label class="mdl-textfield__label" for="age-entered"
+              >street name here...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+          <!-- Simple Textfield -->
+          <p>Street Name</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              id="street-name"
+            />
+            <label class="mdl-textfield__label" for="sample1"
+              >street name here...</label
+            >
+          </div>
+          <br />
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="enterClicked()"
+            type="button"
+          >
+            Enter
+          </button>
+        </form>
+        <br />
+        <div class="page-content-answer">
+          <div id="street-adress"></div>
+        </div>
       </main>
-      </div>
-      </body>
-      
+    </div>
+  </body>
 </html>
-
